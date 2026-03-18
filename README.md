@@ -1,33 +1,18 @@
-## Flight Delay Analyzer
+Flight Delay Predictive Analyzer
+Status: Refactored for modular architecture.
 
-Small Tkinter app to analyze flight delays from a CSV file. Allows:
-- Loading a CSV containing `Airline`, `Delay`, and `Flight Number`.
-- Showing average delay per airline and on-time percentage.
-- Plotting delay patterns for a selected airline.
+The Problem
+Manual flight tracking is inefficient for large datasets. This tool automates the analysis of scheduling bottlenecks using Python.
 
----
+Technical Stack
+Backend: Python (Pandas, NumPy)
 
-## How to Run (for anyone using this project)
+Logic: Object-Oriented Programming (OOP)
 
-1. Clone the repo or download it as a ZIP file.
-2. (Optional) Create a virtual environment:
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate
-   ```
-3. Install dependencies (this just means installing the Python libraries the project uses):
-   ```bash
-   pip install pandas matplotlib tkinter
-   ```
-4. Run the main Python file:
-   ```bash
-   python main.py
-   ```
+UI: Tkinter
 
----
+Visuals: Matplotlib
 
-### What “installing dependencies” means
-Dependencies are just the extra Python tools or libraries this app needs to work.  
-When someone runs `pip install ...`, it tells Python to download and prepare those tools.
-
----
+Project Structure
+/src: Contains the main application logic (main.py).
+/data: Secure storage for flight datasets (CSV).
